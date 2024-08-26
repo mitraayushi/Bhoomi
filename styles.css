@@ -1,0 +1,343 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: rgb(86, 8, 8);
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+p {
+    margin: 0;
+    padding: 10px 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+header {
+    
+    background-color:#803408;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+#hero {
+    background-image: url('image.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#hero h1 {
+    font-size: 36px;
+}
+
+#hero p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #9b8613;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+
+#features {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.feature {
+    background-color: rgba(54, 13, 13, 0.7);
+    padding: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+
+#about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-content {
+    background-color: rgba(54, 13, 13, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#how-it-works {
+
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+}
+
+.step {
+    background-color: rgba(54, 13, 13, 0.7);
+    padding: 20px;
+    margin-left: 10px;;
+    border-radius: 10px;
+    width: 22%;
+}
+
+
+
+
+.project-listing {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.project {
+    background-color: rgba(54, 13, 13, 0.7);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+
+
+
+
+.volunteer-button {
+    background-color:  #9b8613;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background:#803408;
+    background-position: center;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.submission-form {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color:  rgba(54, 13, 13, 0.7);
+    padding: 70px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.submission-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.submission-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.submission-form input[type="file"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+.submission-form input,
+.submission-form select,
+.submission-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.submission-form button {
+    background-color: #9b8613;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+.container {
+    width: 70%;
+    margin: 30px;
+    padding: 20px;
+    background-color:rgba(54, 13, 13, 0.7); ;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.profile-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.profile-header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.profile-header h1 {
+    margin: 0;
+    color: white;
+}
+.profile-header p {
+    margin: 5px 0;
+    
+}
+.section {
+    margin-bottom: 20px;
+}
+.section h2 {
+    margin-top: 0;
+   
+}
+.events-list, .coins-earned {
+    list-style-type: none;
+    padding: 0;
+}
+.events-list li, .coins-earned li {
+    padding: 10px;
+    background:rgba(61, 13, 13, 0.7) ;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.events-list li button {
+    background-color: #9b8613;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.events-list li button:hover {
+    background-color: #9b8613;
+
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 600px;
+    border-radius: 8px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.upload-section {
+    border-top: 2px solid #ddd;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.upload-section input[type="file"] {
+    display: block;
+    margin: 10px 0;
+}
+.upload-section button {
+    background-color: #9b8613 ;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+

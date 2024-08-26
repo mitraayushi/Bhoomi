@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhoomi Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <div class="logo">Bhoomi</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+    </nav>
+</header>
+    <div class="container">
+        <div class="profile-header">
+            <img src="dp.jpg" alt="Profile Picture">
+            <div>
+                <h1>Amit Mishra</h1>
+                <p>Email: amit.m@gmail.com</p>
+                <p>Location: Bangalore, India</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Registered Events</h2>
+            <ul class="events-list">
+                <li>
+                    Beach Cleanup - January 2024
+                    <button onclick="uploadProof('Beach Cleanup')">Upload Proof</button>
+                </li>
+                <li>
+                    Tree Planting - March 2024
+                    <button onclick="uploadProof('Tree Planting')">Upload Proof</button>
+                </li>
+                <li>
+                    Recycling Drive - May 2024
+                    <button onclick="uploadProof('Recycling Drive')">Upload Proof</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Coins Earned</h2>
+            <ul class="coins-earned">
+                <li>100 Coins</li>
+            </ul>
+        </div>       
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Upload Proof for <span id="eventName"></span></h2>
+                <input type="file" id="proofUpload" name="proofUpload" accept="image/*">
+                <button type="button" onclick="uploadProof()">Upload Proof</button>
+            </div>
+        </div>
+    
+    <script>
+        
+        var modal = document.getElementById("myModal");
+
+
+        var span = document.getElementsByClassName("close")[0];
+
+        function openModal(eventName) {
+        document.getElementById("eventName").textContent = eventName;
+        modal.style.display = "block";
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        function uploadProof() {
+            const fileInput = document.getElementById('proofUpload');
+            if (fileInput.files.length > 0) {
+                alert(`Proof for ${document.getElementById('eventName').textContent} uploaded successfully!`);
+                modal.style.display = "none";
+
+            } 
+        }
+
+
+    
+    </script>
+</body>
+</html>
