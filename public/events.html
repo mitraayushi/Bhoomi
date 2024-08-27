@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events </title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  </head>
+  <body>
     <header>
-        <div class="logo">Bhoomi</div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="profile.html">Profile</a>
-        </nav>
+      <div class="logo">Bhoomi</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <button class="connect-wallet" onclick="connectWallet()">
+          Connect Wallet
+        </button>
+      </nav>
     </header>
 
     <section class="project-listing">
-        <h2>Upcoming Events</h2>
+      <h2>Upcoming Events</h2>
 
-        <div class="project">
-            <h3>Beach Cleaning</h3>
-            <p>Location:Juhu Beach,Mumbai<br>Date:06.09.2024<br>Time:6 am</p>
-            <button class="volunteer-button" onclick="window.location.href='register.html'">Volunteer</button>
-        </div>
+      <div class="project">
+        <h3>Beach Cleaning</h3>
+        <p>Location:Juhu Beach,Mumbai<br />Date:06.09.2024<br />Time:6 am</p>
+        <button
+          class="volunteer-button"
+          onclick="window.location.href='register.html'"
+        >
+          Volunteer
+        </button>
+      </div>
 
-        <div class="project">
-            <h3>Tree Planting</h3>
-            <p>Location:Newtown,Kolkata<br>Date:15.09.2024<br>Time:10 am</p>
-            <button class="volunteer-button" onclick="openInvestPopup('Project Title 1')">Volunteer</button>
-        </div>
-        <div class="project">
-            <h3>Wildlife Conservation Workshop</h3>
-            <p>Location:Surat,Gujrat<br>Date:25.09.2024<br>Time: 11 am</p>
-            <button class="volunteer-button">Volunteer</button>
-        </div>
-
-      </section>
-        <footer>
-            <p>&copy; 2024 Bhoomi. All Rights Reserved.</p>
-        </footer>
+      <div class="project">
+        <h3>Tree Planting</h3>
+        <p>Location:Newtown,Kolkata<br />Date:15.09.2024<br />Time:10 am</p>
+        <button
+          class="volunteer-button"
+          onclick="openInvestPopup('Project Title 1')"
+        >
+          Volunteer
+        </button>
+      </div>
+      <div class="project">
+        <h3>Wildlife Conservation Workshop</h3>
+        <p>Location:Surat,Gujrat<br />Date:25.09.2024<br />Time: 11 am</p>
+        <button class="volunteer-button">Volunteer</button>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2024 Bhoomi. All Rights Reserved.</p>
+    </footer>
 
     <script src="scripts.js"></script>
-</body>
+  </body>
 </html>

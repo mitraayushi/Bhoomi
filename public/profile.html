@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bhoomi Profile Page</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ethers@5.7.2/dist/ethers.umd.min.js"></script>
   </head>
   <body>
     <header>
@@ -12,6 +14,9 @@
       <nav>
         <a href="index.html">Home</a>
         <a href="events.html">Events</a>
+        <button class="connect-wallet" onclick="connectWallet()">
+          Connect Wallet
+        </button>
       </nav>
     </header>
     <div class="container">
@@ -68,10 +73,17 @@
 
       <div class="section">
         <h2>Coins Earned</h2>
-        <ul class="coins-earned" style="flex-direction: row; display: flex;">
-          <li>100 BHOOMI</li>
+        <ul class="coins-earned" style="flex-direction: row; display: flex">
+          <li id="claimAmt">100</li>
+          <li>BHOOMI</li>
           <li>
-          <button type="button" style="border-radius: 2em; border: 2px white dotted;" onclick="withdraw()">WITHDRAW</button>
+            <button
+              type="button"
+              style="border-radius: 2em; border: 2px white dotted"
+              onclick="withdraw()"
+            >
+              WITHDRAW
+            </button>
           </li>
         </ul>
       </div>
@@ -123,9 +135,22 @@
       }
     }
 
+    const claimAmtEle = document.getElementById("claimAmt");
     const withdraw = () => {
-        console.log("hellooo this is withdraw");
-        
-    }
+      console.log("hellooo this is withdraw", claimAmtEle.innerText);
+      const clientAddress = localStorage.getItem("clientAddress");
+
+      fetch("/withdraw", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify({
+          clientAddress,
+          claimAmt: claimAmtEle.innerText,
+        }),
+      });
+      claimAmtEle.innerText = 0;
+    };
   </script>
 </html>

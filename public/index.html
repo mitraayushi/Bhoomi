@@ -1,76 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bhoomi - Social Volunteering App</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="logo">Bhoomi</div>
-        <nav>
-            <a href="events.html">Events</a>
-            <a href="profile.html">Profile</a>
-        </nav>
+      <div class="logo">Bhoomi</div>
+      <nav>
+        <a href="events.html">Events</a>
+        <a href="profile.html">Profile</a>
+        <button class="connect-wallet" onclick="connectWallet()">
+          Connect Wallet
+        </button>
+      </nav>
     </header>
     <section id="hero">
-        <div class="hero-content">
-            <h1>Join Bhoomi: Make a Difference in Environmental Conservation</h1>
-            <p>Volunteer for a greener planet and earn rewards for your efforts.</p>
-            <a href="events.html" class="btn">Get Started</a>
-        </div>
+      <div class="hero-content">
+        <h1>Join Bhoomi: Make a Difference in Environmental Conservation</h1>
+        <p>Volunteer for a greener planet and earn rewards for your efforts.</p>
+        <a href="events.html" class="btn">Get Started</a>
+      </div>
     </section>
     <section id="features">
-        <div class="feature">
-            <h2>Discover Events</h2>
-            <p>Explore a wide range of environmental conservation events in your area.</p>
-        </div>
-        <div class="feature">
-            <h2>Earn Rewards</h2>
-            <p>Get rewarded with points that can be redeemed for various perks.</p>
-        </div>
-        <div class="feature">
-            <h2>Make an Impact</h2>
-            <p>Contribute to meaningful causes and track your impact on the environment.</p>
-        </div>
+      <div class="feature">
+        <h2>Discover Events</h2>
+        <p>
+          Explore a wide range of environmental conservation events in your
+          area.
+        </p>
+      </div>
+      <div class="feature">
+        <h2>Earn Rewards</h2>
+        <p>Get rewarded with points that can be redeemed for various perks.</p>
+      </div>
+      <div class="feature">
+        <h2>Make an Impact</h2>
+        <p>
+          Contribute to meaningful causes and track your impact on the
+          environment.
+        </p>
+      </div>
     </section>
 
-
     <section id="about">
-        <div class="about-content">
-            <h2>About Us</h2>
-            <p>Bhoomi is dedicated to creating a community of environmentally conscious individuals who take action to protect and preserve our planet.</p>
-            <p>We connect volunteers with events that make a real impact on the environment, rewarding their efforts with points that can be redeemed for meaningful perks.</p>
-        </div>
+      <div class="about-content">
+        <h2>About Us</h2>
+        <p>
+          Bhoomi is dedicated to creating a community of environmentally
+          conscious individuals who take action to protect and preserve our
+          planet.
+        </p>
+        <p>
+          We connect volunteers with events that make a real impact on the
+          environment, rewarding their efforts with points that can be redeemed
+          for meaningful perks.
+        </p>
+      </div>
     </section>
 
     <section id="how-it-works">
-        <h2>How It Works</h2>
-        <div class="steps">
-            <div class="step">
-                <h3>Sign Up</h3>
-                <p>Create your Bhoomi account to start volunteering.</p>
-            </div>
-            <div class="step">
-                <h3>Join Events</h3>
-                <p>Browse through upcoming events and choose where you'd like to help.</p>
-            </div>
-            <div class="step">
-                <h3>Earn Points</h3>
-                <p>Participate in events and earn points for your contributions.</p>
-            </div>
-            <div class="step">
-                <h3>Redeem Rewards</h3>
-                <p>Use your points to get rewards, from eco-friendly products to exclusive experiences.</p>
-            </div>
+      <h2>How It Works</h2>
+      <div class="steps">
+        <div class="step">
+          <h3>Sign Up</h3>
+          <p>Create your Bhoomi account to start volunteering.</p>
         </div>
+        <div class="step">
+          <h3>Join Events</h3>
+          <p>
+            Browse through upcoming events and choose where you'd like to help.
+          </p>
+        </div>
+        <div class="step">
+          <h3>Earn Points</h3>
+          <p>Participate in events and earn points for your contributions.</p>
+        </div>
+        <div class="step">
+          <h3>Redeem Rewards</h3>
+          <p>
+            Use your points to get rewards, from eco-friendly products to
+            exclusive experiences.
+          </p>
+        </div>
+      </div>
     </section>
 
-   
     <footer>
-        <p>&copy; 2024 Bhoomi. All Rights Reserved.</p>
+      <p>&copy; 2024 Bhoomi. All Rights Reserved.</p>
     </footer>
-</body>
+  </body>
 </html>
