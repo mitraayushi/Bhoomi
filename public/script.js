@@ -1,3 +1,44 @@
+// Toggle chat popup display
+const chatBtn = document.getElementById('chatBtn');
+const chatPopup = document.getElementById('chatPopup');
+const closeChat = document.getElementById('closeChat');
+
+// Show the popup when the chat button is clicked
+chatBtn.addEventListener('click', () => {
+    chatPopup.style.display = 'flex';
+});
+
+// Hide the popup when the close button is clicked
+closeChat.addEventListener('click', () => {
+    chatPopup.style.display = 'none';
+});
+
+// Handle sending messages
+const sendMessageBtn = document.getElementById('sendMessage');
+const chatBody = document.getElementById('chatBody');
+const userMessageInput = document.getElementById('userMessage');
+
+sendMessageBtn.addEventListener('click', () => {
+    const userMessage = userMessageInput.value;
+    if (userMessage) {
+        appendMessage('user', userMessage);
+        setTimeout(() => {
+            appendMessage('bot', `You said: ${userMessage}`);
+        }, 1000);
+        userMessageInput.value = '';
+    }
+});
+
+// Function to append messages to chat
+function appendMessage(sender, message) {
+    const messageDiv = document.createElement('div');
+    messageDiv.classList.add(sender === 'bot' ? 'bot-message' : 'user-message');
+    messageDiv.textContent = message;
+    chatBody.appendChild(messageDiv);
+    chatBody.scrollTop = chatBody.scrollHeight; // Scroll to bottom
+}
+
+
 let clientAddress;
 function showInvestPopup(address) {
   document.getElementById("invest-popup").style.display = "flex";
@@ -57,4 +98,5 @@ async function connectWallet() {
     } catch (error) {
       console.error("Error connecting to MetaMask:", error);
     }
-  }
+}
+
