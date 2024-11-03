@@ -5,21 +5,22 @@ npm install
 
 Add this token as manually into your wallet SDU
 
-Contract Address = 0x400790014D6a80e432F0a2fAabfBa7152A539636
+Contract Address = 0xd4638B5Adb558EF21654E1E5A20d31E741Ca696e
+[Verify TOKEN](https://testnet.aiascan.com/token/0xd4638B5Adb558EF21654E1E5A20d31E741Ca696e)
 
 ------------
 
-# About Project SeedEDU (Build on Opencampus Chain)
+# About Project BHOOMI (Build on AIA Chain)
 
-- Revolutionary Platform: Seed EDU is designed to empower promising students by providing decentralized, crypto-based funding for their educational journeys.
+- Revolutionary Platform: BHOOMI is designed to empower promising students by providing decentralized, crypto-based funding for their educational journeys.
 
-- Blockchain-Powered: Built on the secure and transparent Edu Chain, Seed EDU leverages blockchain technology to ensure transparency, security, and accessibility.
+- Blockchain-Powered: Built on the secure and transparent AIA Chain, BHOOMI leverages blockchain technology to ensure transparency, security, and accessibility.
 
 - Direct Contributions: Donors can contribute directly to students using cryptocurrency, bypassing traditional financial barriers and middlemen.
 
 - Smart Contracts: Funds are managed by smart contracts, which release them based on predefined academic milestones, ensuring that students are rewarded for their achievements.
 
-- Community Engagement: Seed EDU fosters a vibrant community where:
+- Community Engagement: BHOOMI fosters a vibrant community where:
 
 - Students can showcase their achievements and set educational goals.
 
