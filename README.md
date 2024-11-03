@@ -3,7 +3,7 @@
 yarn install 
 npm install
 
-Add this token as manually into your wallet SDU
+Add this token as manually into your wallet BHOOMI
 
 Contract Address = 0xd4638B5Adb558EF21654E1E5A20d31E741Ca696e
 [Verify TOKEN](https://testnet.aiascan.com/token/0xd4638B5Adb558EF21654E1E5A20d31E741Ca696e)
