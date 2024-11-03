@@ -1,3 +1,9 @@
+# BHOOMI
+
+- Bhoomi connects eco-conscious volunteers with impactful events, rewarding participation with points that can be redeemed for meaningful perks.
+
+- Bhoomi is a platform that connects people who care about the environment with opportunities to volunteer for meaningful events. As volunteers take part in these activities, they earn points that can be exchanged for valuable rewards, encouraging continued efforts to safeguard our planet
+
 # Setup the project using 
 
 yarn install 
